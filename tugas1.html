@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Profile Card</title>
+
+<style>
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 3. STICKY NAVBAR */
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000; /* biar selalu di atas */
+}
+
+/* CONTAINER BIAR BISA SCROLL */
+.content {
+    height: 1500px;
+    padding: 20px;
+}
+
+/* 1. PROFILE CARD */
+.card {
+    position: relative;
+    width: 280px;
+    height: 350px;
+    background: #f4f4f4;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 2. BADGE ONLINE */
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* ISI CARD */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2 {
+    margin: 10px 0 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* 4. BACK TO TOP BUTTON */
+.top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    z-index: 999; /* biar di atas elemen lain */
+}
+
+.top-btn:hover {
+    background: #555;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    My Website
+</div>
+
+<div class="content">
+
+    <!-- PROFILE CARD -->
+     <div class="card">
+        <div class="badge">Online 🟢</div>
+
+        <h2>Abdul Malik</h2>
+
+        <div class="rating"> 4.9</div>
+
+        <div class="info">
+            Aerox <br>
+            Sleman <br>
+            081225669821
+        </div>
+
+</div>
+
+<!-- BACK TO TOP -->
+<a href="#" class="top-btn">↑ Top</a>
+
+</body>
+</html>
